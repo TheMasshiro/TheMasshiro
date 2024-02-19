@@ -1,4 +1,4 @@
-### Hi there 👋
+## Hi there 👋 I'm John Christian Vicente
 
 # 💫 About Me:
 I'm a third-year computer engineering student at President Ramon Magsaysay State University. I am passionate about diving deep into software engineering.
