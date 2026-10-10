@@ -42,7 +42,7 @@ RIGHT = [
     ]),
 ]
 
-PACK = ("Linux · Git · Docker · CI/CD · Tesseract OCR · "
+PACK = ("Linux · Git · Docker · CI/CD · "
         "Neovim and VS Code, which do not speak to each other")
 
 

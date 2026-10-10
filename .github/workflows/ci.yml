@@ -1,6 +1,11 @@
 name: Update profile
 
 on:
+  push:
+    branches: [main]
+    # The job's own card commits would otherwise queue a pointless rerun.
+    paths-ignore:
+      - "profile/*.svg"
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
