@@ -3,9 +3,12 @@
 
 github-readme-stats paints each language with GitHub's canonical color, which
 has no override option and drags a rainbow into an otherwise pastel README.
-The card emits colors in language order, so we collect the ones that are not
-part of the card chrome and remap them to the banner palette, biggest share
-first. If the card ever stops looking like this, nothing is changed.
+
+Language colors are the only ones the card writes as fill="..." presentation
+attributes on its marks. Its own chrome lives either in the <style> block or on
+the frame rect, so both are lifted out before scanning rather than kept in a
+blocklist of specific colors, which would quietly rot whenever upstream picks a
+new default.
 """
 
 import re
@@ -15,36 +18,45 @@ from pathlib import Path
 # Soft lavender to pale mint, lifted from profile/banner.svg.
 RAMP = ["#c9b8e8", "#8fd3b6", "#f6d98a", "#9ec5f0", "#f2b8d0", "#d9f5e8"]
 
-# Colors the card draws for itself: background, title, label text, masks, and
-# the border stroke, which is emitted with stroke-opacity 0 even when hidden.
-CHROME = {
-    "#0d1117", "#c9b8e8", "#c9d1d9", "#e4e2e2",
-    "#ffffff", "#000000", "#fff", "#000",
-}
+# The unfilled part of the progress bar is hardcoded light grey in the card's
+# stylesheet and ignores every theme option, so it is set directly.
+TRACK_FROM, TRACK_TO = "#ddd", "#1b2233"
 
-HEX = re.compile(r"#(?:[0-9a-fA-F]{3}){1,2}\b")
+STYLE = re.compile(r"<style>.*?</style>", re.S)
+FRAME = re.compile(r"<rect[^>]*stroke-opacity[^>]*/>", re.S)
+FILL = re.compile(r'fill="(#(?:[0-9a-fA-F]{3}){1,2})"')
+
+
+def language_colors(svg: str) -> list[str]:
+    """Ordered, de-duplicated language colors, biggest share first."""
+    marks = FRAME.sub("", STYLE.sub("", svg))
+    seen = []
+    for color in FILL.findall(marks):
+        lowered = color.lower()
+        if lowered not in seen:
+            seen.append(lowered)
+    return seen
 
 
 def repaint(svg: str) -> tuple[str, dict[str, str]]:
-    seen = []
-    for color in HEX.findall(svg):
-        lowered = color.lower()
-        if lowered not in CHROME and lowered not in seen:
-            seen.append(lowered)
-
-    mapping = {old: RAMP[i % len(RAMP)] for i, old in enumerate(seen)}
+    mapping = {old: RAMP[i % len(RAMP)] for i, old in enumerate(language_colors(svg))}
     for old, new in mapping.items():
-        svg = re.sub(re.escape(old), new, svg, flags=re.IGNORECASE)
+        # The boundary keeps a short color such as #ddd from matching the first
+        # half of a long one.
+        svg = re.sub(re.escape(old) + r"\b", new, svg, flags=re.IGNORECASE)
+
+    if TRACK_FROM in svg:
+        svg = re.sub(re.escape(TRACK_FROM) + r"\b", TRACK_TO, svg)
+        mapping[TRACK_FROM] = TRACK_TO
     return svg, mapping
 
 
 def main() -> int:
     path = Path(sys.argv[1])
-    svg = path.read_text()
-    repainted, mapping = repaint(svg)
+    repainted, mapping = repaint(path.read_text())
 
     if not mapping:
-        print(f"{path}: no language colors found, leaving it alone")
+        print(f"{path}: nothing to repaint, leaving it alone")
         return 0
 
     path.write_text(repainted)
