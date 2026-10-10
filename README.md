@@ -11,22 +11,8 @@
 <br/>
 
 <p align="center">
-  <img src="./profile/calling.svg" width="100%"
-       alt="The Calling: Embedded Systems and Firmware Engineering. Full-stack Developer at Salenga Law Firm since August 2026. BS Computer Engineering, President Ramon Magsaysay State University." />
-</p>
-
-<br/>
-
-<p align="center">
   <img src="./profile/spellbook.svg" width="100%"
        alt="The Spell Book. Systems: Rust, C, C++, Assembly. Web and scripting: TypeScript, JavaScript, Python. Databases: MongoDB, MySQL. Frameworks: React, Tauri, Node.js, Express. Protocols: Nostr, OpenMLS, WebRTC. On the device: LiteRT-LM, ONNX Runtime, MLX, RAG with BM25, OpenCV. Carried in the pack: Linux, Git, Docker, CI/CD, Tesseract OCR, Neovim and VS Code." />
-</p>
-
-<br/>
-
-<p align="center">
-  <img src="./profile/works.svg" width="100%"
-       alt="Great Works: offline on-device legal AI at Salenga Law Firm, the BSFly IoT platform, and a real-time fly density monitoring system." />
 </p>
 
 <br/>
