@@ -81,11 +81,12 @@ def streaks(days: list[tuple[str, int]]) -> tuple[int, int]:
         run = run + 1 if level else 0
         longest = max(longest, run)
 
+    # A run only counts as current if it reaches today, or yesterday when
+    # today has not been counted yet. An earlier run is history, not a streak.
     current = 0
-    for _, level in reversed(days):
-        # Today may not have landed yet, so an empty final day does not end it.
+    for age, (_, level) in enumerate(reversed(days)):
         if not level:
-            if current == 0:
+            if age == 0:
                 continue
             break
         current += 1

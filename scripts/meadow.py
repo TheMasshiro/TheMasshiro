@@ -74,7 +74,7 @@ def main() -> int:
 {f.heading(W, "Flowers Left Behind", "ONE BLOOM FOR EVERY DAY ON THE ROAD", rule_y=106)}
 {grid(days)}
 <line x1="70" y1="266" x2="930" y2="266" stroke="{f.RULE}" stroke-width="1"/>
-{tile(250, f"{total:,}", "BLOOMS THIS YEAR")}
+{tile(250, f"{total:,}", "BLOOMS, LAST 12 MONTHS")}
 {tile(500, f"{current:,}", "CURRENT STREAK")}
 {tile(750, f"{longest:,}", "LONGEST STREAK")}
 </g>'''
