@@ -17,29 +17,29 @@
 
 <p align="center"><b>⚔️ Offensive Magic · Systems</b></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Assembly-525252?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-c9b8e8?style=for-the-badge&logo=rust&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/C-c9b8e8?style=for-the-badge&logo=c&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/C%2B%2B-c9b8e8?style=for-the-badge&logo=cplusplus&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/Assembly-c9b8e8?style=for-the-badge&logoColor=0d1117" />
 </p>
 
 <p align="center"><b>🌸 Everyday Spells · Web &amp; Scripting</b></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-f2b8d0?style=for-the-badge&logo=typescript&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/JavaScript-f2b8d0?style=for-the-badge&logo=javascript&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/Python-f2b8d0?style=for-the-badge&logo=python&logoColor=0d1117" />
 </p>
 
 <p align="center"><b>🔮 Memory Vaults · Databases</b></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-8fd3b6?style=for-the-badge&logo=mongodb&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/MySQL-8fd3b6?style=for-the-badge&logo=mysql&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/PostgreSQL-8fd3b6?style=for-the-badge&logo=postgresql&logoColor=0d1117" />
 </p>
 
 <p align="center"><b>🎒 Party Equipment</b></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-f6d98a?style=for-the-badge&logo=github&logoColor=0d1117" />
 </p>
 
 <br/>
@@ -64,7 +64,7 @@
 <h2 align="center">🌿 The Trail Left Behind</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheMasshiro/TheMasshiro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/TheMasshiro/TheMasshiro/output/snake-frieren.svg" alt="Contribution Snake" />
 </p>
 
 <br/>
