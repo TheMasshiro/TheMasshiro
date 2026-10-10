@@ -37,6 +37,9 @@ jobs:
       - name: Repaint language colors
         run: python3 scripts/frieren-palette.py profile/top-langs.svg
 
+      - name: Redraw the era log
+        run: python3 scripts/era-log.py
+
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"

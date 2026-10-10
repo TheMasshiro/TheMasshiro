@@ -1,78 +1,55 @@
 <p align="center">
-  <img src="./profile/banner.svg" alt="A starry night over a flower meadow" width="100%" />
+  <img src="./profile/banner.svg" width="100%"
+       alt="A starry night over a flower meadow. Masshiro, a wandering mage's grimoire." />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=28&duration=3500&pause=1200&color=C9B8E8&center=true&vCenter=true&width=650&lines=Welcome%2C+traveler;A+wandering+mage+of+Rust+and+C;Collecting+spells+one+commit+at+a+time;The+journey+is+the+point" alt="Typing intro" />
-</p>
-
-<p align="center">
-  <i>A traveler who collects programming languages the way some mages collect obscure spells.<br/>
-  Some are powerful. Some are just for fun. Each one is worth learning.</i>
+  <i>A traveler who collects programming languages the way some mages collect<br/>
+  obscure spells. The journey is the point.</i>
 </p>
 
 <br/>
 
-<h2 align="center">📜 The Grimoire</h2>
-
-<p align="center"><b>⚔️ Offensive Magic · Systems</b></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-c9b8e8?style=for-the-badge&logo=rust&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/C-c9b8e8?style=for-the-badge&logo=c&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/C%2B%2B-c9b8e8?style=for-the-badge&logo=cplusplus&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/Assembly-c9b8e8?style=for-the-badge&logoColor=0d1117" />
-</p>
-
-<p align="center"><b>🌸 Everyday Spells · Web &amp; Scripting</b></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-f2b8d0?style=for-the-badge&logo=typescript&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/JavaScript-f2b8d0?style=for-the-badge&logo=javascript&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/Python-f2b8d0?style=for-the-badge&logo=python&logoColor=0d1117" />
-</p>
-
-<p align="center"><b>🔮 Memory Vaults · Databases</b></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/MongoDB-8fd3b6?style=for-the-badge&logo=mongodb&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/MySQL-8fd3b6?style=for-the-badge&logo=mysql&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/PostgreSQL-8fd3b6?style=for-the-badge&logo=postgresql&logoColor=0d1117" />
-</p>
-
-<p align="center"><b>🎒 Party Equipment</b></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/GitHub-f6d98a?style=for-the-badge&logo=github&logoColor=0d1117" />
+  <img src="./profile/spellbook.svg" width="100%"
+       alt="The Spell Book, collected along the way. Offensive magic and systems: Rust, C, C++, Assembly. Everyday spells for web and scripting: TypeScript, JavaScript, Python. Memory vaults and databases: PostgreSQL, MySQL, MongoDB. Spells of no particular use: Vim, Shell, Regex. Some are powerful. Some are not. Each one was worth learning." />
 </p>
 
 <br/>
 
-<h2 align="center">⏳ Memories of the Journey</h2>
+<p align="center">
+  <img src="./profile/era.svg" width="100%"
+       alt="The Era Log, counting how long the journey has run since 31 January 2024." />
+</p>
 
 <p align="center">
   <a href="https://github.com/TheMasshiro">
-    <img height="150" align="center" src="./profile/stats.svg" />
+    <img height="150" align="center" src="./profile/stats.svg" alt="The Traveler's Ledger: commits, pull requests and rank" />
   </a>
   <a href="https://github.com/TheMasshiro">
-    <img height="150" align="center" src="./profile/top-langs.svg" />
+    <img height="150" align="center" src="./profile/top-langs.svg" alt="Spells Most Cast: most used languages" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=TheMasshiro&hide_border=true&background=0d1117&ring=c9b8e8&fire=8fd3b6&currStreakLabel=c9b8e8&sideLabels=c9d1d9&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&stroke=30363d" />
+  <img alt="Contribution streak"
+       src="https://streak-stats.demolab.com/?user=TheMasshiro&hide_border=true&background=0d1117&ring=c9b8e8&fire=8fd3b6&currStreakLabel=c9b8e8&sideLabels=c9d1d9&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&stroke=30363d" />
 </p>
 
 <br/>
 
-<h2 align="center">🌿 The Trail Left Behind</h2>
+<p align="center">
+  <img src="./profile/flowers.svg" width="100%"
+       alt="Flowers Left Behind: one bloom for every day on the road." />
+</p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheMasshiro/TheMasshiro/output/snake-frieren.svg" alt="Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/TheMasshiro/TheMasshiro/output/snake-frieren.svg"
+       alt="A snake winding through the contribution grid" />
 </p>
 
 <br/>
 
 <p align="center">
   <i>Every small commit is a step. Someday, looking back, the whole road will make sense.</i>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=TheMasshiro&color=c9b8e8&style=flat-square&label=Travelers+who+passed+by" />
 </p>

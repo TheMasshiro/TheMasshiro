@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+<defs>
+  <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0a0f20"/>
+    <stop offset="1" stop-color="#070b18"/>
+  </linearGradient>
+  <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="frame"><rect width="1000" height="600" rx="16"/></clipPath>
+</defs>
+<style>
+  .mote { animation: rise 9s linear infinite; }
+  @keyframes rise { 0% { transform: translateY(0); opacity: 0 } 15% { opacity: .8 } 85% { opacity: .5 } 100% { transform: translateY(-150px); opacity: 0 } }
+  .fade { animation: fadein 2.5s ease-out both; }
+  @keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+</style>
+<g clip-path="url(#frame)">
+<rect width="1000" height="600" fill="url(#page)"/>
+<circle class="mote" cx="948.5" cy="488.3" r="1.2" fill="#d9f5e8" style="animation-delay:-8.55s" filter="url(#glow)"/>
+<circle class="mote" cx="37.4" cy="489.2" r="1.9" fill="#d9f5e8" style="animation-delay:-5.96s" filter="url(#glow)"/>
+<circle class="mote" cx="965.4" cy="538.4" r="1.4" fill="#d9f5e8" style="animation-delay:-5.34s" filter="url(#glow)"/>
+<circle class="mote" cx="974.8" cy="514.4" r="1.4" fill="#d9f5e8" style="animation-delay:-3.53s" filter="url(#glow)"/>
+<circle class="mote" cx="39.9" cy="524.1" r="1.8" fill="#d9f5e8" style="animation-delay:-0.54s" filter="url(#glow)"/>
+<circle class="mote" cx="18.1" cy="496.5" r="2.0" fill="#d9f5e8" style="animation-delay:-8.90s" filter="url(#glow)"/>
+<circle class="mote" cx="973.4" cy="554.6" r="1.4" fill="#d9f5e8" style="animation-delay:-7.17s" filter="url(#glow)"/>
+<circle class="mote" cx="45.2" cy="532.7" r="1.4" fill="#d9f5e8" style="animation-delay:-2.64s" filter="url(#glow)"/>
+<circle class="mote" cx="963.3" cy="595.0" r="2.1" fill="#d9f5e8" style="animation-delay:-8.94s" filter="url(#glow)"/>
+<circle class="mote" cx="47.6" cy="542.8" r="2.0" fill="#d9f5e8" style="animation-delay:-7.54s" filter="url(#glow)"/>
+<g class="fade">
+<text x="500" y="64" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="34" font-style="italic" letter-spacing="2" fill="#f1ecff" filter="url(#glow)">The Spell Book</text>
+<text x="500" y="92" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="5" fill="#c9b8e8">· COLLECTED ALONG THE WAY ·</text>
+<line x1="70" y1="114" x2="930" y2="114" stroke="#2b2c55" stroke-width="1"/>
+
+<text x="70" y="152" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="3" fill="#f6d98a" opacity="0.85">OFFENSIVE MAGIC · SYSTEMS</text>
+<path d="M 74 173 L 78 177 L 74 181 L 70 177 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="182" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Rust</text>
+<text x="90" y="201" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a ward that refuses to let you be careless</text>
+<path d="M 74 216 L 78 220 L 74 224 L 70 220 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="225" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">C</text>
+<text x="90" y="244" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">the oldest spell here, still the sharpest</text>
+<path d="M 74 259 L 78 263 L 74 267 L 70 263 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="268" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">C++</text>
+<text x="90" y="287" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">the same spell, grown strange with age</text>
+<path d="M 74 302 L 78 306 L 74 310 L 70 306 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="311" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Assembly</text>
+<text x="90" y="330" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">learned once, out of stubbornness</text>
+<text x="70" y="372" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="3" fill="#f6d98a" opacity="0.85">MEMORY VAULTS · DATABASES</text>
+<path d="M 74 393 L 78 397 L 74 401 L 70 397 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="402" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">PostgreSQL</text>
+<text x="90" y="421" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a vault that remembers everything, exactly</text>
+<path d="M 74 436 L 78 440 L 74 444 L 70 440 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="445" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">MySQL</text>
+<text x="90" y="464" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a vault that remembers enough</text>
+<path d="M 74 479 L 78 483 L 74 487 L 70 483 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="90" y="488" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">MongoDB</text>
+<text x="90" y="507" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a vault with no shelves, which is the point</text>
+<text x="530" y="152" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="3" fill="#f6d98a" opacity="0.85">EVERYDAY SPELLS · WEB &amp; SCRIPTING</text>
+<path d="M 534 173 L 538 177 L 534 181 L 530 177 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="182" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">TypeScript</text>
+<text x="550" y="201" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a plain spell, kept tidy</text>
+<path d="M 534 216 L 538 220 L 534 224 L 530 220 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="225" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">JavaScript</text>
+<text x="550" y="244" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">known by everyone, agreed on by no one</text>
+<path d="M 534 259 L 538 263 L 534 267 L 530 263 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="268" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Python</text>
+<text x="550" y="287" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">for errands</text>
+<text x="530" y="372" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="3" fill="#f6d98a" opacity="0.85">SPELLS OF NO PARTICULAR USE</text>
+<path d="M 534 393 L 538 397 L 534 401 L 530 397 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="402" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Vim</text>
+<text x="550" y="421" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">a spell for leaving, eventually</text>
+<path d="M 534 436 L 538 440 L 534 444 L 530 440 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="445" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Shell</text>
+<text x="550" y="464" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">written at midnight, never read again</text>
+<path d="M 534 479 L 538 483 L 534 487 L 530 483 Z" fill="#8fd3b6" opacity="0.7"/>
+<text x="550" y="488" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="17" fill="#c9b8e8">Regex</text>
+<text x="550" y="507" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">it worked once. no one knows why</text>
+
+<line x1="70" y1="542" x2="930" y2="542" stroke="#2b2c55" stroke-width="1"/>
+<text x="500" y="572" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" font-style="italic" fill="#8a93a8">Some are powerful. Some are not. Each one was worth learning.</text>
+</g>
+</g></svg>
