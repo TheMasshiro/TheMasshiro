@@ -1,29 +1,89 @@
 #!/usr/bin/env python3
-"""Draw the Era Log card: how long the journey has run, and how little that is.
+"""Draw the Era Log: how long the journey has run, and how little that is.
 
 Frieren measures a decade the way everyone else measures an afternoon, so the
-card states the elapsed time plainly and then undercuts it. Rendered here
-rather than fetched from a widget because no widget speaks in this voice.
+card states the elapsed time plainly and then undercuts it.
+
+Deliberately accurate only to the month. An earlier version printed a day
+count, which meant the file changed on every nightly run and CI committed it,
+quietly padding the contribution graph with work nobody did. On a page arguing
+that small honest steps add up, that was the wrong trade.
 """
 
+import json
+import os
 import random
+import sys
+import urllib.error
+import urllib.request
 from datetime import date
 from pathlib import Path
 
-JOURNEY_START = date(2024, 1, 31)
-OUT = Path("profile/era.svg")
+sys.path.insert(0, str(Path(__file__).parent))
+import frieren as f
 
 W, H = 1000, 250
-SERIF = "Georgia, 'Iowan Old Style', 'Times New Roman', serif"
-LAV, MINT, GOLD = "#c9b8e8", "#8fd3b6", "#f6d98a"
-CREAM, MUTED, RULE = "#f1ecff", "#8a93a8", "#2b2c55"
+OUT = Path("profile/era.svg")
+
+# Used when the API cannot be reached or the token cannot see contributions.
+FALLBACK_START = date(2024, 1, 31)
+GRAPHQL = "https://api.github.com/graphql"
 
 
-def elapsed(start: date, today: date) -> tuple[int, int, int]:
+def query(token: str, doc: str, **variables):
+    body = json.dumps({"query": doc, "variables": variables}).encode()
+    req = urllib.request.Request(
+        GRAPHQL, data=body,
+        headers={"Authorization": f"bearer {token}",
+                 "Content-Type": "application/json",
+                 "User-Agent": "frieren-profile"},
+    )
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        payload = json.load(resp)
+    if payload.get("errors"):
+        raise RuntimeError(payload["errors"][0].get("message", "graphql error"))
+    return payload["data"]
+
+
+def first_contribution(login: str, token: str) -> date:
+    """The earliest day the calendar shows any activity."""
+    years = query(token, """
+        query($login:String!){ user(login:$login){
+          contributionsCollection{ contributionYears } } }
+    """, login=login)["user"]["contributionsCollection"]["contributionYears"]
+
+    earliest = min(years)
+    weeks = query(token, """
+        query($login:String!,$from:DateTime!,$to:DateTime!){ user(login:$login){
+          contributionsCollection(from:$from,to:$to){
+            contributionCalendar{ weeks{ contributionDays{ date contributionCount } } } } } }
+    """, login=login,
+        **{"from": f"{earliest}-01-01T00:00:00Z", "to": f"{earliest}-12-31T23:59:59Z"},
+    )["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+
+    days = [d for w in weeks for d in w["contributionDays"] if d["contributionCount"]]
+    return date.fromisoformat(min(d["date"] for d in days))
+
+
+def journey_start() -> date:
+    login = os.environ.get("GITHUB_REPOSITORY_OWNER", "TheMasshiro")
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if not token:
+        return FALLBACK_START
+    try:
+        return first_contribution(login, token)
+    except (urllib.error.URLError, RuntimeError, KeyError, ValueError) as exc:
+        # The default Actions token usually cannot read user contributions. A
+        # PAT in GH_TOKEN lifts this; until then the known date is fine.
+        print(f"era-log: falling back to {FALLBACK_START} ({exc})", file=sys.stderr)
+        return FALLBACK_START
+
+
+def elapsed(start: date, today: date) -> tuple[int, int]:
     months = (today.year - start.year) * 12 + (today.month - start.month)
     if today.day < start.day:
         months -= 1
-    return months // 12, months % 12, (today - start).days
+    return months // 12, months % 12
 
 
 def plural(n: int, word: str) -> str:
@@ -41,57 +101,25 @@ def undercut(years: int) -> str:
 
 
 def main() -> int:
-    today = date.today()
-    years, months, days = elapsed(JOURNEY_START, today)
+    start = journey_start()
+    years, months = elapsed(start, date.today())
 
     parts = [plural(years, "year")] if years else []
     parts.append(plural(months, "month"))
     span = ", ".join(parts)
+    started = start.strftime("%d %B %Y").lstrip("0")
 
-    started = JOURNEY_START.strftime("%d %B %Y").lstrip("0")
-    footing = f"since {started} · {days:,} days on the road"
+    body = f'''<g class="fade">
+{f.heading(W, "The Era Log", "HOW LONG THE JOURNEY HAS RUN", rule_y=106)}
+<text x="500" y="158" text-anchor="middle" font-family="{f.SERIF}" font-size="40" font-style="italic" fill="{f.MINT}" filter="url(#glow)">{span}</text>
+<text x="500" y="186" text-anchor="middle" font-family="{f.SERIF}" font-size="12" letter-spacing="1" fill="{f.MUTED}">since {started}</text>
+<text x="500" y="220" text-anchor="middle" font-family="{f.SERIF}" font-size="15" font-style="italic" fill="{f.GOLD}" opacity="0.9">{undercut(years)}</text>
+</g>'''
 
-    random.seed(days)
-    motes = "\n".join(
-        f'<circle class="mote" cx="{random.choice([random.uniform(16, 56), random.uniform(944, 984)]):.1f}" '
-        f'cy="{random.uniform(170, 250):.1f}" r="{random.uniform(1.2, 2.0):.1f}" fill="#d9f5e8" '
-        f'style="animation-delay:-{random.uniform(0, 9):.2f}s" filter="url(#glow)"/>'
-        for _ in range(6)
-    )
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
-<defs>
-  <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#0a0f20"/>
-    <stop offset="1" stop-color="#070b18"/>
-  </linearGradient>
-  <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
-    <feGaussianBlur stdDeviation="4" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <clipPath id="frame"><rect width="{W}" height="{H}" rx="16"/></clipPath>
-</defs>
-<style>
-  .mote {{ animation: rise 9s linear infinite; }}
-  @keyframes rise {{ 0% {{ transform: translateY(0); opacity: 0 }} 15% {{ opacity: .8 }} 85% {{ opacity: .5 }} 100% {{ transform: translateY(-120px); opacity: 0 }} }}
-  .fade {{ animation: fadein 2.5s ease-out both; }}
-  @keyframes fadein {{ from {{ opacity: 0 }} to {{ opacity: 1 }} }}
-</style>
-<g clip-path="url(#frame)">
-<rect width="{W}" height="{H}" fill="url(#page)"/>
-{motes}
-<g class="fade">
-<text x="500" y="58" text-anchor="middle" font-family="{SERIF}" font-size="30" font-style="italic" letter-spacing="2" fill="{CREAM}" filter="url(#glow)">The Era Log</text>
-<text x="500" y="84" text-anchor="middle" font-family="{SERIF}" font-size="11" letter-spacing="5" fill="{LAV}">· HOW LONG THE JOURNEY HAS RUN ·</text>
-<line x1="70" y1="106" x2="930" y2="106" stroke="{RULE}" stroke-width="1"/>
-<text x="500" y="158" text-anchor="middle" font-family="{SERIF}" font-size="40" font-style="italic" fill="{MINT}" filter="url(#glow)">{span}</text>
-<text x="500" y="186" text-anchor="middle" font-family="{SERIF}" font-size="12" letter-spacing="1" fill="{MUTED}">{footing}</text>
-<text x="500" y="220" text-anchor="middle" font-family="{SERIF}" font-size="15" font-style="italic" fill="{GOLD}" opacity="0.9">{undercut(years)}</text>
-</g>
-</g></svg>
-'''
-    OUT.write_text(svg)
-    print(f"{OUT}: {span} ({days:,} days)")
+    # Seeded by the month so the drawing is stable until the month turns.
+    OUT.write_text(f.card(W, H, body, mote_count=6,
+                          rng=random.Random(years * 12 + months)))
+    print(f"{OUT}: {span} since {started}")
     return 0
 
 
