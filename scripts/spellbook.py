@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Draw the Spell Book: what got collected along the way, and what it cost."""
+"""Draw the Spell Book: the real stack, annotated.
+
+Contents follow the resume. An earlier version of this card was written from
+guesswork and listed PostgreSQL, which has never been used here.
+"""
 
 import random
 import sys
@@ -8,11 +12,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import frieren as f
 
-W, H = 1000, 600
+W, H = 1000, 940
 OUT = Path("profile/spellbook.svg")
 
-# Both columns pin their second heading to the same baseline so the page reads
-# as one spread rather than two lists that happen to sit side by side.
+# Headings are pinned to shared baselines so the two columns read as one spread.
 LEFT = [
     (152, "OFFENSIVE MAGIC · SYSTEMS", [
         ("Rust", "a ward that refuses to let you be careless"),
@@ -20,10 +23,14 @@ LEFT = [
         ("C++", "the same spell, grown strange with age"),
         ("Assembly", "learned once, out of stubbornness"),
     ]),
-    (372, "MEMORY VAULTS · DATABASES", [
-        ("PostgreSQL", "a vault that remembers everything, exactly"),
-        ("MySQL", "a vault that remembers enough"),
+    (374, "MEMORY VAULTS · DATABASES", [
         ("MongoDB", "a vault with no shelves, which is the point"),
+        ("MySQL", "a vault that remembers enough"),
+    ]),
+    (596, "STRANGE MAGIC · PROTOCOLS", [
+        ("Nostr", "messages that need no permission to travel"),
+        ("OpenMLS", "a sealed letter only the party can open"),
+        ("WebRTC", "two travelers talking with no inn between"),
     ]),
 ]
 RIGHT = [
@@ -32,12 +39,23 @@ RIGHT = [
         ("JavaScript", "known by everyone, agreed on by no one"),
         ("Python", "for errands"),
     ]),
-    (372, "SPELLS OF NO PARTICULAR USE", [
-        ("Vim", "a spell for leaving, eventually"),
-        ("VSCode", "the one that actually closes"),
-        ("Shell", "written at midnight, never read again"),
+    (374, "SUMMONING CIRCLES · FRAMEWORKS", [
+        ("React", "a familiar, summoned to redraw the window"),
+        ("Tauri", "the same familiar, in a far smaller body"),
+        ("Node.js", "errands, run on the other side of the wall"),
+        ("Express", "a door, and someone to answer it"),
+    ]),
+    (596, "OLD MAGIC · WHAT RUNS ON THE DEVICE", [
+        ("LiteRT-LM", "a small mind that runs without the tower"),
+        ("ONNX Runtime", "a common tongue for borrowed minds"),
+        ("MLX", "the same mind, humming on Apple silicon"),
+        ("RAG + BM25", "finding the four pages that matter"),
+        ("OpenCV", "teaching a machine what it is looking at"),
     ]),
 ]
+
+PACK = ("Linux · Git · Docker · CI/CD · Tesseract OCR · "
+        "Neovim and VS Code, which do not speak to each other")
 
 
 def column(x, groups):
@@ -67,10 +85,11 @@ def main() -> int:
 {f.heading(W, "The Spell Book", "COLLECTED ALONG THE WAY", size=34, rule_y=114)}
 {column(70, LEFT)}
 {column(530, RIGHT)}
-<line x1="70" y1="542" x2="930" y2="542" stroke="{f.RULE}" stroke-width="1"/>
-<text x="500" y="572" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}">Some are powerful. Some are not. Each one was worth learning.</text>
+<line x1="70" y1="850" x2="930" y2="850" stroke="{f.RULE}" stroke-width="1"/>
+<text x="500" y="880" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}"><tspan font-size="10" font-style="normal" letter-spacing="3" fill="{f.GOLD}" opacity="0.85">CARRIED IN THE PACK</tspan><tspan dx="14">{PACK}</tspan></text>
+<text x="500" y="910" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}">Some are powerful. Some are not. Each one was worth learning.</text>
 </g>'''
-    OUT.write_text(f.card(W, H, body, mote_count=10, rng=random.Random(31)))
+    OUT.write_text(f.card(W, H, body, mote_count=12, rng=random.Random(31)))
     print(f"{OUT}: {sum(len(s) for _, _, s in LEFT + RIGHT)} spells")
     return 0
 
