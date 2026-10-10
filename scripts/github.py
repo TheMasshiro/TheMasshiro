@@ -13,9 +13,33 @@ import re
 import urllib.error
 import urllib.request
 from datetime import date, timedelta
+from pathlib import Path
 
 API = "https://api.github.com"
 UA = "frieren-profile"
+
+
+def _load_dotenv(path: Path = Path(".env")) -> None:
+    """Let a local run pick up GH_TOKEN without exporting it by hand.
+
+    Real environment variables win, so Actions secrets are never shadowed by a
+    stale file someone forgot about.
+    """
+    try:
+        text = path.read_text()
+    except OSError:
+        return
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        value = value.strip().strip("\"'")
+        if value:
+            os.environ.setdefault(key.strip(), value)
+
+
+_load_dotenv()
 
 
 def _get(url: str, accept: str = "application/vnd.github+json") -> str:

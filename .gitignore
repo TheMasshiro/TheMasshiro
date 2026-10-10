@@ -1,0 +1,5 @@
+# Local secrets. GH_TOKEN belongs here, never in a tracked file.
+.env
+
+__pycache__/
+*.pyc
