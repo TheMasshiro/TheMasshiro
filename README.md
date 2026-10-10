@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=28&duration=3500&pause=1200&color=C9B8E8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+TheMasshiro;A+wandering+mage+of+Rust+and+C;Collecting+spells+one+commit+at+a+time;The+journey+is+the+point" alt="Typing intro" />
+  <img src="./profile/banner.svg" alt="A starry night over a flower meadow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=28&duration=3500&pause=1200&color=C9B8E8&center=true&vCenter=true&width=650&lines=Welcome%2C+traveler;A+wandering+mage+of+Rust+and+C;Collecting+spells+one+commit+at+a+time;The+journey+is+the+point" alt="Typing intro" />
 </p>
 
 <p align="center">
@@ -11,19 +15,22 @@
 
 <h2 align="center">📜 The Grimoire</h2>
 
-<p align="center"><b>⚔️ Offensive Magic — Systems</b></p>
+<p align="center"><b>⚔️ Offensive Magic · Systems</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Assembly-525252?style=for-the-badge&logoColor=white" />
 </p>
 
-<p align="center"><b>🌸 Everyday Spells — Web</b></p>
+<p align="center"><b>🌸 Everyday Spells · Web &amp; Scripting</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
-<p align="center"><b>🔮 Memory Vaults — Databases</b></p>
+<p align="center"><b>🔮 Memory Vaults · Databases</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
@@ -37,26 +44,15 @@
 
 <br/>
 
-<h2 align="center">🗺️ Party Log — Current Quests</h2>
-
-<!-- Replace these with your real projects -->
-<div align="center">
-
-| Quest | Status | Notes |
-|:--|:--:|:--|
-| [Project One](https://github.com/TheMasshiro/project-one) | 🟢 In progress | A short line about what it does |
-| [Project Two](https://github.com/TheMasshiro/project-two) | 🟡 Resting at the inn | Paused, but not forgotten |
-| [Project Three](https://github.com/TheMasshiro/project-three) | ✅ Completed | A quest worth remembering |
-
-</div>
-
-<br/>
-
 <h2 align="center">⏳ Memories of the Journey</h2>
 
 <p align="center">
-  <img height="160" src="https://github-stats-extended.vercel.app/api?username=TheMasshiro&show_icons=true&hide_border=true&bg_color=0d1117&title_color=c9b8e8&text_color=c9d1d9&icon_color=8fd3b6" />
-  <img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=TheMasshiro&layout=compact&hide_border=true&bg_color=0d1117&title_color=c9b8e8&text_color=c9d1d9" />
+  <a href="https://github.com/TheMasshiro">
+    <img height="150" align="center" src="./profile/stats.svg" />
+  </a>
+  <a href="https://github.com/TheMasshiro">
+    <img height="150" align="center" src="./profile/top-langs.svg" />
+  </a>
 </p>
 
 <p align="center">
