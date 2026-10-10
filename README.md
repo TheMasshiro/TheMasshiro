@@ -14,9 +14,10 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=TheMasshiro&show_icons=true&theme=github_dark&hide_border=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheMasshiro&layout=compact&theme=github_dark&hide_border=true" />
+  <img height="160" src="https://github-stats-extended.vercel.app/api?username=TheMasshiro&show_icons=true&theme=github_dark&hide_border=true" />
+  <img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=TheMasshiro&layout=compact&theme=github_dark&hide_border=true" />
 </p>
+
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=TheMasshiro&theme=github-dark-blue&hide_border=true" />
