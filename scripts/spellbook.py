@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import frieren as f
 
-W, H = 1000, 940
+W, H = 1000, 680
 OUT = Path("profile/spellbook.svg")
 
 # Headings are pinned to shared baselines so the two columns read as one spread.
@@ -27,11 +27,6 @@ LEFT = [
         ("MongoDB", "a vault with no shelves, which is the point"),
         ("MySQL", "a vault that remembers enough"),
     ]),
-    (596, "STRANGE MAGIC · PROTOCOLS", [
-        ("Nostr", "messages that need no permission to travel"),
-        ("OpenMLS", "a sealed letter only the party can open"),
-        ("WebRTC", "two travelers talking with no inn between"),
-    ]),
 ]
 RIGHT = [
     (152, "EVERYDAY SPELLS · WEB &amp; SCRIPTING", [
@@ -44,13 +39,6 @@ RIGHT = [
         ("Tauri", "the same familiar, in a far smaller body"),
         ("Node.js", "errands, run on the other side of the wall"),
         ("Express", "a door, and someone to answer it"),
-    ]),
-    (596, "OLD MAGIC · WHAT RUNS ON THE DEVICE", [
-        ("LiteRT-LM", "a small mind that runs without the tower"),
-        ("ONNX Runtime", "a common tongue for borrowed minds"),
-        ("MLX", "the same mind, humming on Apple silicon"),
-        ("RAG + BM25", "finding the four pages that matter"),
-        ("OpenCV", "teaching a machine what it is looking at"),
     ]),
 ]
 
@@ -85,9 +73,9 @@ def main() -> int:
 {f.heading(W, "The Spell Book", "COLLECTED ALONG THE WAY", size=34, rule_y=114)}
 {column(70, LEFT)}
 {column(530, RIGHT)}
-<line x1="70" y1="850" x2="930" y2="850" stroke="{f.RULE}" stroke-width="1"/>
-<text x="500" y="880" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}"><tspan font-size="10" font-style="normal" letter-spacing="3" fill="{f.GOLD}" opacity="0.85">CARRIED IN THE PACK</tspan><tspan dx="14">{PACK}</tspan></text>
-<text x="500" y="910" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}">Some are powerful. Some are not. Each one was worth learning.</text>
+<line x1="70" y1="590" x2="930" y2="590" stroke="{f.RULE}" stroke-width="1"/>
+<text x="500" y="620" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}"><tspan font-size="10" font-style="normal" letter-spacing="3" fill="{f.GOLD}" opacity="0.85">CARRIED IN THE PACK</tspan><tspan dx="14">{PACK}</tspan></text>
+<text x="500" y="650" text-anchor="middle" font-family="{f.SERIF}" font-size="13" font-style="italic" fill="{f.MUTED}">Some are powerful. Some are not. Each one was worth learning.</text>
 </g>'''
     OUT.write_text(f.card(W, H, body, mote_count=12, rng=random.Random(31)))
     print(f"{OUT}: {sum(len(s) for _, _, s in LEFT + RIGHT)} spells")
