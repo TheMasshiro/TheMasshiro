@@ -3,7 +3,6 @@ name: Update profile
 on:
   push:
     branches: [main]
-    # The job's own card commits would otherwise queue a pointless rerun.
     paths-ignore:
       - "profile/*.svg"
   schedule:
@@ -19,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Optional PAT with read:user. Without it the meadow counts only public
-      # contributions, which here is about two thirds of the real total.
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - uses: actions/checkout@v6
