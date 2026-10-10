@@ -1,28 +1,82 @@
-<h2 align="center">💻 Tech Stack</h2>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
+  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=28&duration=3500&pause=1200&color=C9B8E8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+TheMasshiro;A+wandering+mage+of+Rust+and+C;Collecting+spells+one+commit+at+a+time;The+journey+is+the+point" alt="Typing intro" />
 </p>
 
-<h2 align="center">📊 GitHub Stats</h2>
-
 <p align="center">
-  <img height="160" src="https://github-stats-extended.vercel.app/api?username=TheMasshiro&show_icons=true&theme=github_dark&hide_border=true" />
-  <img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=TheMasshiro&layout=compact&theme=github_dark&hide_border=true" />
+  <i>A traveler who collects programming languages the way some mages collect obscure spells.<br/>
+  Some are powerful. Some are just for fun. Each one is worth learning.</i>
 </p>
 
+<br/>
+
+<h2 align="center">📜 The Grimoire</h2>
+
+<p align="center"><b>⚔️ Offensive Magic — Systems</b></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+</p>
+
+<p align="center"><b>🌸 Everyday Spells — Web</b></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+</p>
+
+<p align="center"><b>🔮 Memory Vaults — Databases</b></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+</p>
+
+<p align="center"><b>🎒 Party Equipment</b></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+<br/>
+
+<h2 align="center">🗺️ Party Log — Current Quests</h2>
+
+<!-- Replace these with your real projects -->
+<div align="center">
+
+| Quest | Status | Notes |
+|:--|:--:|:--|
+| [Project One](https://github.com/TheMasshiro/project-one) | 🟢 In progress | A short line about what it does |
+| [Project Two](https://github.com/TheMasshiro/project-two) | 🟡 Resting at the inn | Paused, but not forgotten |
+| [Project Three](https://github.com/TheMasshiro/project-three) | ✅ Completed | A quest worth remembering |
+
+</div>
+
+<br/>
+
+<h2 align="center">⏳ Memories of the Journey</h2>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=TheMasshiro&theme=github-dark-blue&hide_border=true" />
+  <img height="160" src="https://github-stats-extended.vercel.app/api?username=TheMasshiro&show_icons=true&hide_border=true&bg_color=0d1117&title_color=c9b8e8&text_color=c9d1d9&icon_color=8fd3b6" />
+  <img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=TheMasshiro&layout=compact&hide_border=true&bg_color=0d1117&title_color=c9b8e8&text_color=c9d1d9" />
 </p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=TheMasshiro&hide_border=true&background=0d1117&ring=c9b8e8&fire=8fd3b6&currStreakLabel=c9b8e8&sideLabels=c9d1d9&currStreakNum=e6edf3&sideNums=e6edf3&dates=8b949e&stroke=30363d" />
+</p>
+
+<br/>
+
+<h2 align="center">🌿 The Trail Left Behind</h2>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/TheMasshiro/TheMasshiro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+</p>
+
+<br/>
+
+<p align="center">
+  <i>Every small commit is a step. Someday, looking back, the whole road will make sense.</i>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=TheMasshiro&color=c9b8e8&style=flat-square&label=Travelers+who+passed+by" />
 </p>
