@@ -24,12 +24,12 @@
 </style>
 <g clip-path="url(#frame)">
 <rect width="1000" height="350" fill="url(#page)"/>
-<circle class="mote" cx="959.3" cy="246.7" r="1.2" fill="#d9f5e8" style="animation-delay:-8.05s" filter="url(#glow)"/>
-<circle class="mote" cx="977.9" cy="267.1" r="2.1" fill="#d9f5e8" style="animation-delay:-5.79s" filter="url(#glow)"/>
-<circle class="mote" cx="25.9" cy="313.8" r="1.3" fill="#d9f5e8" style="animation-delay:-6.83s" filter="url(#glow)"/>
-<circle class="mote" cx="45.1" cy="265.1" r="2.0" fill="#d9f5e8" style="animation-delay:-8.58s" filter="url(#glow)"/>
-<circle class="mote" cx="22.2" cy="247.9" r="1.7" fill="#d9f5e8" style="animation-delay:-1.12s" filter="url(#glow)"/>
-<circle class="mote" cx="26.4" cy="256.4" r="1.5" fill="#d9f5e8" style="animation-delay:-1.22s" filter="url(#glow)"/>
+<circle class="mote" cx="965.3" cy="294.2" r="1.9" fill="#d9f5e8" style="animation-delay:-6.98s" filter="url(#glow)"/>
+<circle class="mote" cx="969.4" cy="339.8" r="1.5" fill="#d9f5e8" style="animation-delay:-8.93s" filter="url(#glow)"/>
+<circle class="mote" cx="970.3" cy="234.2" r="1.9" fill="#d9f5e8" style="animation-delay:-3.59s" filter="url(#glow)"/>
+<circle class="mote" cx="972.0" cy="335.5" r="1.6" fill="#d9f5e8" style="animation-delay:-6.64s" filter="url(#glow)"/>
+<circle class="mote" cx="944.7" cy="297.3" r="1.6" fill="#d9f5e8" style="animation-delay:-8.62s" filter="url(#glow)"/>
+<circle class="mote" cx="956.5" cy="298.4" r="1.9" fill="#d9f5e8" style="animation-delay:-4.93s" filter="url(#glow)"/>
 <g class="fade">
 <text x="500" y="58" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" letter-spacing="2" fill="#f1ecff" filter="url(#glow)">Flowers Left Behind</text>
 <text x="500" y="84" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="5" fill="#c9b8e8">· ONE BLOOM FOR EVERY DAY ON THE ROAD ·</text>
@@ -415,8 +415,9 @@
 <circle cx="912.4" cy="178" r="4.2" fill="#8fd3b6" opacity="0.92"><title>2026-10-27</title></circle>
 <circle cx="912.4" cy="194" r="3.6" fill="#5fa98c" opacity="0.92"><title>2026-10-28</title></circle>
 <circle cx="912.4" cy="210" r="3.6" fill="#5fa98c" opacity="0.92"><title>2026-10-29</title></circle>
+<circle cx="912.4" cy="226" r="2.0" fill="#141c30" opacity="0.5"><title>2026-10-30</title></circle>
 <line x1="70" y1="266" x2="930" y2="266" stroke="#2b2c55" stroke-width="1"/>
-<text x="250" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">1,332</text><text x="250" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">BLOOMS, LAST 12 MONTHS</text>
+<text x="250" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">1,337</text><text x="250" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">BLOOMS, LAST 12 MONTHS</text>
 <text x="500" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">3</text><text x="500" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">CURRENT STREAK</text>
 <text x="750" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">18</text><text x="750" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">LONGEST STREAK</text>
 </g>
