@@ -24,37 +24,37 @@
 </style>
 <g clip-path="url(#frame)">
 <rect width="1000" height="390" fill="url(#page)"/>
-<circle class="mote" cx="958.3" cy="313.2" r="1.6" fill="#d9f5e8" style="animation-delay:-7.40s" filter="url(#glow)"/>
-<circle class="mote" cx="945.0" cy="360.4" r="1.7" fill="#d9f5e8" style="animation-delay:-6.05s" filter="url(#glow)"/>
-<circle class="mote" cx="953.2" cy="354.4" r="1.6" fill="#d9f5e8" style="animation-delay:-2.47s" filter="url(#glow)"/>
-<circle class="mote" cx="28.4" cy="345.9" r="1.4" fill="#d9f5e8" style="animation-delay:-7.30s" filter="url(#glow)"/>
-<circle class="mote" cx="963.8" cy="370.8" r="1.6" fill="#d9f5e8" style="animation-delay:-5.73s" filter="url(#glow)"/>
-<circle class="mote" cx="963.9" cy="267.0" r="1.3" fill="#d9f5e8" style="animation-delay:-9.00s" filter="url(#glow)"/>
-<circle class="mote" cx="965.2" cy="367.5" r="1.7" fill="#d9f5e8" style="animation-delay:-8.75s" filter="url(#glow)"/>
-<circle class="mote" cx="28.1" cy="275.9" r="1.9" fill="#d9f5e8" style="animation-delay:-8.94s" filter="url(#glow)"/>
+<circle class="mote" cx="16.6" cy="271.9" r="1.7" fill="#d9f5e8" style="animation-delay:-2.49s" filter="url(#glow)"/>
+<circle class="mote" cx="967.3" cy="326.0" r="1.2" fill="#d9f5e8" style="animation-delay:-1.82s" filter="url(#glow)"/>
+<circle class="mote" cx="974.8" cy="266.6" r="1.7" fill="#d9f5e8" style="animation-delay:-7.86s" filter="url(#glow)"/>
+<circle class="mote" cx="979.0" cy="368.4" r="1.4" fill="#d9f5e8" style="animation-delay:-0.04s" filter="url(#glow)"/>
+<circle class="mote" cx="958.5" cy="266.0" r="1.4" fill="#d9f5e8" style="animation-delay:-8.49s" filter="url(#glow)"/>
+<circle class="mote" cx="983.3" cy="275.9" r="1.5" fill="#d9f5e8" style="animation-delay:-4.53s" filter="url(#glow)"/>
+<circle class="mote" cx="959.3" cy="385.5" r="1.3" fill="#d9f5e8" style="animation-delay:-4.48s" filter="url(#glow)"/>
+<circle class="mote" cx="39.9" cy="329.1" r="1.9" fill="#d9f5e8" style="animation-delay:-8.47s" filter="url(#glow)"/>
 <g class="fade">
 <text x="500" y="58" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" letter-spacing="2" fill="#f1ecff" filter="url(#glow)">The Traveler's Ledger</text>
 <text x="500" y="84" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="5" fill="#c9b8e8">· WHAT THE ROAD HAS ADDED UP TO ·</text>
 <line x1="70" y1="106" x2="930" y2="106" stroke="#2b2c55" stroke-width="1"/>
-<text x="125" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">1,631</text><text x="125" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">CONTRIBUTIONS, LAST YEAR</text>
-<text x="375" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">10</text><text x="375" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">PULL REQUESTS OPENED</text>
+<text x="125" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">1,648</text><text x="125" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">CONTRIBUTIONS, LAST YEAR</text>
+<text x="375" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">13</text><text x="375" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">PULL REQUESTS OPENED</text>
 <text x="625" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">17</text><text x="625" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">REPOSITORIES KEPT</text>
 <text x="875" y="168" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="38" font-style="italic" fill="#f1ecff" filter="url(#glow)">13</text><text x="875" y="194" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">LANGUAGES WRITTEN</text>
 <line x1="70" y1="228" x2="930" y2="228" stroke="#2b2c55" stroke-width="1"/>
 <text x="70" y="256" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="11" letter-spacing="3" fill="#f6d98a" opacity="0.85">SPELLS MOST CAST</text>
 <clipPath id="rail"><rect x="70" y="272" width="860" height="10" rx="5.0"/></clipPath>
 <rect x="70" y="272" width="860" height="10" rx="5.0" fill="#1b2233"/>
-<rect clip-path="url(#rail)" x="70.0" y="272" width="430.0" height="10" fill="#c9b8e8"/>
-<rect clip-path="url(#rail)" x="500.0" y="272" width="182.3" height="10" fill="#8fd3b6"/>
-<rect clip-path="url(#rail)" x="682.3" y="272" width="106.1" height="10" fill="#f6d98a"/>
-<rect clip-path="url(#rail)" x="788.4" y="272" width="68.0" height="10" fill="#9ec5f0"/>
-<rect clip-path="url(#rail)" x="856.5" y="272" width="41.4" height="10" fill="#f2b8d0"/>
-<rect clip-path="url(#rail)" x="897.9" y="272" width="32.1" height="10" fill="#d9f5e8"/>
-<circle cx="75" cy="314" r="5" fill="#c9b8e8"/><text x="88" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">JavaScript <tspan fill="#c9b8e8">50.0%</tspan></text>
-<circle cx="362" cy="314" r="5" fill="#8fd3b6"/><text x="375" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">TypeScript <tspan fill="#c9b8e8">21.2%</tspan></text>
-<circle cx="649" cy="314" r="5" fill="#f6d98a"/><text x="662" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">Rust <tspan fill="#c9b8e8">12.3%</tspan></text>
-<circle cx="75" cy="342" r="5" fill="#9ec5f0"/><text x="88" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">C++ <tspan fill="#c9b8e8">7.9%</tspan></text>
-<circle cx="362" cy="342" r="5" fill="#f2b8d0"/><text x="375" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">CSS <tspan fill="#c9b8e8">4.8%</tspan></text>
-<circle cx="649" cy="342" r="5" fill="#d9f5e8"/><text x="662" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">Lua <tspan fill="#c9b8e8">3.7%</tspan></text>
+<rect clip-path="url(#rail)" x="70.0" y="272" width="426.8" height="10" fill="#c9b8e8"/>
+<rect clip-path="url(#rail)" x="496.8" y="272" width="177.4" height="10" fill="#8fd3b6"/>
+<rect clip-path="url(#rail)" x="674.2" y="272" width="106.8" height="10" fill="#f6d98a"/>
+<rect clip-path="url(#rail)" x="781.1" y="272" width="61.6" height="10" fill="#9ec5f0"/>
+<rect clip-path="url(#rail)" x="842.6" y="272" width="55.1" height="10" fill="#f2b8d0"/>
+<rect clip-path="url(#rail)" x="897.7" y="272" width="32.3" height="10" fill="#d9f5e8"/>
+<circle cx="75" cy="314" r="5" fill="#c9b8e8"/><text x="88" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">JavaScript <tspan fill="#c9b8e8">49.6%</tspan></text>
+<circle cx="362" cy="314" r="5" fill="#8fd3b6"/><text x="375" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">TypeScript <tspan fill="#c9b8e8">20.6%</tspan></text>
+<circle cx="649" cy="314" r="5" fill="#f6d98a"/><text x="662" y="318" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">Rust <tspan fill="#c9b8e8">12.4%</tspan></text>
+<circle cx="75" cy="342" r="5" fill="#9ec5f0"/><text x="88" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">C++ <tspan fill="#c9b8e8">7.2%</tspan></text>
+<circle cx="362" cy="342" r="5" fill="#f2b8d0"/><text x="375" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">CSS <tspan fill="#c9b8e8">6.4%</tspan></text>
+<circle cx="649" cy="342" r="5" fill="#d9f5e8"/><text x="662" y="346" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="13" fill="#8a93a8">Lua <tspan fill="#c9b8e8">3.8%</tspan></text>
 </g>
 </g></svg>
