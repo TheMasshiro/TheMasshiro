@@ -416,6 +416,7 @@
 <circle cx="912.4" cy="194" r="3.6" fill="#5fa98c" opacity="0.92"><title>2026-11-25</title></circle>
 <circle cx="912.4" cy="210" r="2.0" fill="#141c30" opacity="0.5"><title>2026-11-26</title></circle>
 <circle cx="912.4" cy="226" r="2.0" fill="#141c30" opacity="0.5"><title>2026-11-27</title></circle>
+<circle cx="912.4" cy="242" r="2.0" fill="#141c30" opacity="0.5"><title>2026-11-28</title></circle>
 <line x1="70" y1="266" x2="930" y2="266" stroke="#2b2c55" stroke-width="1"/>
 <text x="250" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">1,648</text><text x="250" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">BLOOMS, LAST 12 MONTHS</text>
 <text x="500" y="302" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="30" font-style="italic" fill="#f1ecff" filter="url(#glow)">0</text><text x="500" y="324" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="10" letter-spacing="3" fill="#c9b8e8" opacity="0.9">CURRENT STREAK</text>
